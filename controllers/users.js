@@ -8,11 +8,11 @@ const getUser = (req, res) => {
 
   mysql
     .createConnection({
-      host: "sql3.freemysqlhosting.net",
-      user: "sql3678855",
-      port: 3306,
-      password: "paV24S5Kl2",
-      database: "sql3678855",
+      host: "monorail.proxy.rlwy.net",
+      user: "root",
+      port: 21751,
+      password: "EcBd5E2FehaBcA3d1bf-2eC51EAHecGf",
+      database: "just_sign_in",
     })
     .then((conn) =>
       conn.query(
@@ -49,11 +49,11 @@ const registerUser = async (req, res) => {
   } else {
     mysql
       .createConnection({
-        host: "sql3.freemysqlhosting.net",
-        user: "sql3678855",
-        port: 3306,
-        password: "paV24S5Kl2",
-        database: "sql3678855",
+        host: "monorail.proxy.rlwy.net",
+        user: "root",
+        port: 21751,
+        password: "EcBd5E2FehaBcA3d1bf-2eC51EAHecGf",
+        database: "just_sign_in",
       })
       .then((conn) =>
         conn.query(
@@ -87,11 +87,11 @@ const loginUser = async (req, res) => {
   } else {
     mysql
       .createConnection({
-        host: "sql3.freemysqlhosting.net",
-        user: "sql3678855",
-        port: 3306,
-        password: "paV24S5Kl2",
-        database: "sql3678855",
+        host: "monorail.proxy.rlwy.net",
+        user: "root",
+        port: 21751,
+        password: "EcBd5E2FehaBcA3d1bf-2eC51EAHecGf",
+        database: "just_sign_in",
       })
       .then((conn) =>
         conn.query(
@@ -150,11 +150,11 @@ const updateData = (req, res) => {
 
   mysql
     .createConnection({
-      host: "sql3.freemysqlhosting.net",
-      user: "sql3678855",
-      port: 3306,
-      password: "paV24S5Kl2",
-      database: "sql3678855",
+      host: "monorail.proxy.rlwy.net",
+      user: "root",
+      port: 21751,
+      password: "EcBd5E2FehaBcA3d1bf-2eC51EAHecGf",
+      database: "just_sign_in",
     })
     .then((conn) => 
       conn.query(
