@@ -4,11 +4,11 @@ const mysql = require("mysql2/promise");
 
 const updateJWT = (jwt, username) => {
   mysql.createConnection({
-    host: "monorail.proxy.rlwy.net",
+    host: process.env.HOST_TOKEN,
     user: "root",
     port: 21751,
-    password: "EcBd5E2FehaBcA3d1bf-2eC51EAHecGf",
-    database: "just_sign_in",
+    password: process.env.PASSWORD_TOKEN,
+    database: process.env.DATABASE_TOKEN,
   })
   .then((conn) => 
     conn.query(`UPDATE users_login SET jwt = ? WHERE username = ?`, [jwt, username])

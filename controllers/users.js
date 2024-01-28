@@ -8,11 +8,11 @@ const getUser = (req, res) => {
 
   mysql
     .createConnection({
-      host: "monorail.proxy.rlwy.net",
+      host: process.env.HOST_TOKEN,
       user: "root",
       port: 21751,
-      password: "EcBd5E2FehaBcA3d1bf-2eC51EAHecGf",
-      database: "just_sign_in",
+      password: process.env.PASSWORD_TOKEN,
+      database: process.env.DATABASE_TOKEN,
     })
     .then((conn) =>
       conn.query(
@@ -49,11 +49,11 @@ const registerUser = async (req, res) => {
   } else {
     mysql
       .createConnection({
-        host: "monorail.proxy.rlwy.net",
+        host: process.env.HOST_TOKEN,
         user: "root",
         port: 21751,
-        password: "EcBd5E2FehaBcA3d1bf-2eC51EAHecGf",
-        database: "just_sign_in",
+        password: process.env.PASSWORD_TOKEN,
+        database: process.env.DATABASE_TOKEN,
       })
       .then((conn) =>
         conn.query(
@@ -87,11 +87,11 @@ const loginUser = async (req, res) => {
   } else {
     mysql
       .createConnection({
-        host: "monorail.proxy.rlwy.net",
+        host: process.env.HOST_TOKEN,
         user: "root",
         port: 21751,
-        password: "EcBd5E2FehaBcA3d1bf-2eC51EAHecGf",
-        database: "just_sign_in",
+        password: process.env.PASSWORD_TOKEN,
+        database: process.env.DATABASE_TOKEN,
       })
       .then((conn) =>
         conn.query(
@@ -150,11 +150,11 @@ const updateData = (req, res) => {
 
   mysql
     .createConnection({
-      host: "monorail.proxy.rlwy.net",
+      host: process.env.HOST_TOKEN,
       user: "root",
       port: 21751,
-      password: "EcBd5E2FehaBcA3d1bf-2eC51EAHecGf",
-      database: "just_sign_in",
+      password: process.env.PASSWORD_TOKEN,
+      database: process.env.DATABASE_TOKEN,
     })
     .then((conn) => 
       conn.query(
